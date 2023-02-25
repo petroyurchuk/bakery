@@ -309,14 +309,12 @@ body {
   line-height: 85%;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .bake__subtitle {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.01em;
-  text-align: center;
 }
 
 .bake__body {
@@ -406,6 +404,10 @@ body {
   .bake__titles {
     align-items: center;
   }
+  .bake__title,
+.bake__subtitle {
+    text-align: center;
+  }
   .bake__item,
 .item-bake__image > img {
     max-width: 328px;
@@ -434,5 +436,125 @@ body {
 .bake__items,
 .bake__body {
     row-gap: 56px;
+  }
+}
+.main__about-us {
+  padding: 178px 124px 56px;
+  min-height: 851px;
+  background-image: url("../images/about-us/Crumbs.png");
+  background-repeat: no-repeat;
+  background-position: center 140px;
+}
+
+.about-us__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 144px;
+}
+
+.about-us__text-info {
+  display: flex;
+  column-gap: 24px;
+}
+
+.about-us__title {
+  width: 50%;
+  font-size: 72px;
+  line-height: 85%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.about-us__description {
+  width: 50%;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+}
+
+.about-us__number-info {
+  display: flex;
+  column-gap: 24px;
+}
+
+.number-info__item {
+  flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.item-number__number {
+  font-size: 96px;
+  line-height: 85%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.item-number__signature {
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #7f8096;
+}
+
+@media (max-width: 1200px) {
+  .main__about-us {
+    padding: 178px 44px 56px;
+  }
+}
+@media (max-width: 810px) {
+  .about-us__number-info {
+    flex-wrap: wrap;
+    row-gap: 80px;
+  }
+  .number-info__item {
+    flex: 1 1 47%;
+  }
+}
+@media (max-width: 768px) {
+  .about-us__title {
+    font-size: 56px;
+  }
+  .main__about-us {
+    padding: 152px 44px 56px;
+  }
+  .about-us__container {
+    row-gap: 72px;
+  }
+}
+@media (max-width: 710px) {
+  .main__about-us {
+    background-position: center center;
+    background-size: 70%;
+  }
+}
+@media (max-width: 515px) {
+  .about-us__text-info {
+    flex-wrap: wrap;
+    row-gap: 32px;
+  }
+  .about-us__title,
+.about-us__description {
+    flex: 1 1 auto;
+  }
+  .item-number {
+    align-items: center;
+  }
+}
+@media (max-width: 320px) {
+  .about-us__number-info {
+    row-gap: 48px;
+  }
+  .main__about-us {
+    background-size: contain;
+    background-position: center 700px;
+  }
+  .about-us__title {
+    font-size: 48px;
+  }
+  .main__about-us {
+    padding: 72px 16px 56px;
+  }
+  .about-us__container {
+    row-gap: 64px;
   }
 }/*# sourceMappingURL=style.css.map */
